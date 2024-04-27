@@ -1,1 +1,3 @@
-/venv/*
+venv/*
+mlproject.egg-info
+.vscode
