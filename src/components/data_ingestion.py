@@ -50,8 +50,10 @@ class Data_Ingestion:
 if __name__ == '__main__':
     obj = Data_Ingestion()
     train_data_path, test_data_path = obj.initalize_data_ingestion()
+
     data_transformer = DataTransformation()
     train_arr, test_arr, _ = data_transformer.initiate_data_transformation(train_data_path, test_data_path)
+    
     modeltrainer = ModelTrainer()
     scores = modeltrainer.initialize_model_trainer(train_array= train_arr,
                                           test_array= test_arr)

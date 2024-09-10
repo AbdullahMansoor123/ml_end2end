@@ -107,7 +107,7 @@ class ModelTrainer:
             )
             logging.info("saving the best model weights")
             # show best model prediction results
-
+            # print(x_test[:2])
             prediction  = best_model.predict(x_test)
             r2_square  = r2_score(y_test, prediction)
 
