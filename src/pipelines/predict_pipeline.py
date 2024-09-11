@@ -13,8 +13,8 @@ class PredictionPipeline():
         pass
     def predict(self,features):
         try:
-            model_path = "artifacts\\model.pkl"
-            preprocessing_path = "artifacts\\preprocessor.pkl"
+            model_path = os.path.join(os.getcwd(),"artifacts/model.pkl")
+            preprocessing_path = os.path.join(os.getcwd(),"artifacts/preprocessor.pkl")
             model = load_object(model_path)
             preprocessor = load_object(preprocessing_path)           
             data_scaled = preprocessor.transform(features)
