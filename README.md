@@ -65,6 +65,7 @@ This project demonstrates a complete pipeline for building, deploying, and maint
      sudo usermod -aG docker ubuntu
      newgrp docker
      ```
+     check if the setup completed successfully by running `docker images` on the EC2 instance
 
 7. **Create Runner on GitHub to Connect Repo with EC2**
    - **Create a Folder for the Runner**  
@@ -89,7 +90,7 @@ This project demonstrates a complete pipeline for building, deploying, and maint
 
    - **Configure the Runner**  
      ```bash
-     ./config.sh --url https://github.com/AbdullahMansoor123/cicd_with_aws --token <your_github_token>
+     ./config.sh --url https://github.com/AbdullahMansoor123/ml_end2end --token <your_github_token>
      ```
 
    - **Run the Runner**  
